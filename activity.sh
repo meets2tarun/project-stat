@@ -9,12 +9,12 @@ if [ -z "$repo" ]; then
 fi
 
 if ! type filename > /dev/null; then
-  sudo apt -y -q install wcstools
+  sudo apt-get -y -q install wcstools
 fi
 
 
 if ! type git > /dev/null; then
-  sudo apt -y -q install git
+  sudo apt-get -y -q install git
 fi
 
 folder="`filename \"$repo\"`"
